@@ -16,10 +16,10 @@ let uniqueArr = [];
 function removeDuplicates(arr) {
     /* Loop will have conditional statement to return new array of elements only if they aren't within uniques array. */
     return arr.filter(function(element, index){
-        if (uniqueArr.indexOf(element) === -1) {
+        if (uniqueArr.indexOf(element) == -1) {
             uniqueArr.push(element);
             return element;
         }
     });
 }
-comsole.log(removeDuplicates(["test", "test", true, 1,1,3,-1,5,5]));
+comsole.log(removeDuplicates(["test", "test", true, 1,1,3,-7,10,5]));
